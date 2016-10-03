@@ -1,0 +1,36 @@
+#parallax-containers {
+    /* The image used */
+    background-image: url("../img/projectLogistics/containers.jpg");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-house {
+    /* The image used */
+    background-image: url("../img/mobilizations/home-twilight-full.jpeg");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-phone {
+  /* The image used */
+  background-image: url("../img/general/red-phone.jpg");
+  /* Set a specific height */
+  height: 250px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

@@ -1,9 +1,7 @@
 <div class="jumbotron text-center">
     <h1>Project Logistics</h1>
-
     <p></p>
 </div>
-
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">
@@ -20,32 +18,35 @@
     </div>
 </div>
 <hr />
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-md-12 text-center">
-      <h1>Cargo & Logistics</h1>
-      <p  ng-repeat="introduction in introductions.text"> <br />
-        {{introduction}}
-      </p>
-    </div>
-  </div>
-  <hr />
-<div class="container">
-  <div class="row text-center">
-    <div class="col-xs-6 col-md-12">
-        <h3>{{serviceIntroduction}}</h3>
-        <br />
-        <h3>Our Services:</h3>    <hr />
-    </div>
-
-
-    <div class="col-xs-3 col-md-6 text-center"ng-repeat="feature in features"  >
-
-      <h4 >{{feature.name}}<!-- I want it to only show the name of the service / feature. Then on click, expand with the description -->
-
-      </h4>
-    </div>
-
-  </div>
+<div id="parallax-containers">
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 text-center">
+            <h1>Cargo & Logistics</h1>
+            <p ng-repeat="introduction in introductions.text"> <br /> {{introduction}}
+            </p>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="container">
+    <div class="row text-center">
+        <div class="col-xs-6 col-md-12">
+            <h3>{{serviceIntroduction}}</h3>
+            <br />
+            <h3>Our Services:</h3>
+            <hr />
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3 col-md-6 text-center" ng-repeat="feature in features">
+            <h4><a ng-click="showDetails =! showDetails">{{feature.name}}</a>
+        </h4>
+            <p class="text-center" ng-show="showDetails">{{feature.definition}}
+            </p>
+        </div>
+    </div>
 </div>

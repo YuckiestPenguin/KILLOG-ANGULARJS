@@ -22,56 +22,84 @@
     </div>
 </div>
 <hr />
+<div id="parallax-house">
 
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-md-12 text-center">
-      <h1>Household Goods & Mobilizations</h1>
-      <p ng-repeat="introduction in introductions.text"> <br />
-        {{introduction}}
-
-      </p>
-    </div>
-  </div>
-  <hr />
 </div>
 <div class="container">
-  <div class="row text-center">
-    <div class="col-xs-6 col-md-12">
-      <h3>{{serviceIntroduction}}</h3>
-      <br />
-      <h3>Our Services:</h3> <hr />
-    </div>
     <div class="row">
-        <div class="col-xs-12 col-md-12">
-      <h3>Consultation & Financial Services</h3>
-    </div>
-    <div class="col-xs-3 col-md-6" ng-repeat="feature in features1">
-      <h4>{{feature.name}}</h4>
+        <div class="col-xs-12 col-md-12 text-center">
+            <h1>Household Goods & Mobilizations</h1>
+            <p ng-repeat="introduction in introductions.text"> <br /> {{introduction}}
 
+            </p>
+        </div>
     </div>
-    </div>
-<hr />
-<div class="row">
-      <div class="col-xs-12 col-md-12">
-      <h3>Domestic Services Portfolio</h3>
-    </div>
-    <div class="col-xs-3 col-md-6" ng-repeat="feature in features2">
-      <h4>{{feature.name}}</h4>
-
-    </div>
+    <hr />
 </div>
-<hr />
-<div class="row">
-    <div class="col-xs-12 col-md-12">
-      <h3>International Services Portfolio</h3>
-    </div>
-    <div class="col-xs-3 col-md-6" ng-repeat="feature in features3">
-      <h4>{{feature.name}}</h4>
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-xs-6 col-md-12">
+            <h4>{{serviceIntroduction}}</h4>
+            <br />
+            <h2>Our Services:</h2>
+            <hr />
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <h3>Consultation & Financial Services</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 col-md-6" ng-repeat="feature in features1">
+                    <h4><a ng-click="showDetails = ! showDetails">{{feature.name}}</a>
+</h4>
+                    <p class="text-center" ng-show="showDetails">
+                        {{feature.definition}}
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <hr />
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h3>Domestic Services Portfolio</h3>
+            </div>
+            <div class="col-xs-3 col-md-6" ng-repeat="feature in features2">
+                <h4><a ng-click="showDetails = ! showDetails">{{feature.name}}</a>
+</h4>
+                <div class="text-center" ng-show="showDetails">
+                    <p>
+                        {{feature.definition}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h3>International Services Portfolio</h3>
+            </div>
+            <div class="col-xs-3 col-md-6" ng-repeat="feature in features3">
+                <h4><a ng-click="showDetails = ! showDetails">{{feature.name}}</a>
+</h4>
+                <div class="text-center" ng-show="showDetails">
+                    <p>
+                        {{feature.definition}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr />
 
     </div>
-</div>
-<hr />
-
-  </div>
 </div>
