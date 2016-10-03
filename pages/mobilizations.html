@@ -13,11 +13,65 @@
 </div>
 <hr />
 <div class="container" ng-controller="mobilizationsController">
-  <div class="row" >
-    <div class="col-xs-4 col-md-3 text-center" ng-repeat="service in services.text">
-      <h4>{{service}}</h4>
-    </div>
+    <div class="row">
+        <div class="col-xs-4 col-md-3 text-center" ng-repeat="service in services.text">
+            <h4>{{service}}</h4>
+        </div>
 
+
+    </div>
+</div>
+<hr />
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 text-center">
+      <h1>Household Goods & Mobilizations</h1>
+      <p ng-repeat="introduction in introductions.text"> <br />
+        {{introduction}}
+
+      </p>
+    </div>
+  </div>
+  <hr />
+</div>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-xs-6 col-md-12">
+      <h3>{{serviceIntroduction}}</h3>
+      <br />
+      <h3>Our Services:</h3> <hr />
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+      <h3>Consultation & Financial Services</h3>
+    </div>
+    <div class="col-xs-3 col-md-6" ng-repeat="feature in features1">
+      <h4>{{feature.name}}</h4>
+
+    </div>
+    </div>
+<hr />
+<div class="row">
+      <div class="col-xs-12 col-md-12">
+      <h3>Domestic Services Portfolio</h3>
+    </div>
+    <div class="col-xs-3 col-md-6" ng-repeat="feature in features2">
+      <h4>{{feature.name}}</h4>
+
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+      <h3>International Services Portfolio</h3>
+    </div>
+    <div class="col-xs-3 col-md-6" ng-repeat="feature in features3">
+      <h4>{{feature.name}}</h4>
+
+    </div>
+</div>
+<hr />
 
   </div>
 </div>
