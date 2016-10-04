@@ -1,11 +1,13 @@
 <div class="jumbotron text-center">
-    <h1>Project Logistics</h1>
+    <p>Project Logistics</p>
     <p></p>
+</div>
+<div id="parallax-containers">
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">
-            <h2>{{message}}</h2>
+            <p>{{message}}</p>
         </div>
     </div>
 </div>
@@ -13,17 +15,16 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-4 col-md-2 text-center" ng-repeat="service in services.text">
-            <h4>{{service}}</h4>
+            <p>{{service}}</p>
         </div>
     </div>
 </div>
 <hr />
-<div id="parallax-containers">
-</div>
+
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-12 text-center">
-            <h1>Cargo & Logistics</h1>
+            <p>Cargo & Logistics</p>
             <p ng-repeat="introduction in introductions.text"> <br /> {{introduction}}
             </p>
         </div>
@@ -33,22 +34,22 @@
 <div class="container">
     <div class="row text-center">
         <div class="col-xs-6 col-md-12">
-            <h3>{{serviceIntroduction}}</h3>
+            <p>{{serviceIntroduction}}</p>
             <br />
-            <h3>Our Services:</h3>
+            <p>Our Services:</p>
             <hr />
         </div>
     </div>
 </div>
 <!-- <div class="container">
-    <div class="row">
-        <div class="col-xs-3 col-md-6 text-center" ng-repeat="feature in features">
-            <h4><a ng-click="showDetails =! showDetails">{{feature.name}}</a>
-        </h4>
-            <p class="text-center" ng-show="showDetails">{{feature.definition}}
-            </p>
-        </div>
-    </div>
+<div class="row">
+<div class="col-xs-3 col-md-6 text-center" ng-repeat="feature in features">
+<p><a ng-click="showDetails =! showDetails">{{feature.name}}</a>
+</p>
+<p class="text-center" ng-show="showDetails">{{feature.definition}}
+</p>
+</div>
+</div>
 </div> -->
 
 <!-- MODAL TEST -->
@@ -57,27 +58,30 @@
         <div ng-init="showModal=false">
             <div class="col-xs-3 col-md-6" ng-repeat="feature in features">
                 <!-- main link -->
-                <h4 class="text-center"><a ng-click="showModal =! showModal">{{feature.name}}</a></h4>
-                <div class="modal fade in" aria-hidden="true" style="display: block;" ng-show="showModal">
+                <p class="text-center"><a ng-click=  "showModal =! showModal">{{feature.name}}</a></p>
+                <div class="modal" aria-hidden="true" style="display: block;" ng-show="showModal">
                     <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content animate-zoom">
+                        <div class="modal-content">
                             <div class="modal-header"><button type="button" class="close" ng-click="showModal=false">x</button>
-                                <h4 class="modal-title">{{feature.name}}</h4>
+                                <p class="modal-title">{{feature.name}}</p>
                             </div>
                             <div class="modal-body">
                                 <p>
                                     {{feature.definition}}
                                 </p>
                             </div>
-                            <div class="modal-footer">
-                                <!-- <button type="button" class="btn btn-default" ng-click="showModal=false">close</button> -->
-                            </div>
+                            <!-- <div class="modal-footer">
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div> <!-- ng-init -->
-    </div> <!--row -->
-</div> <!-- container -->
+        </div>
+        <!-- ng-init -->
+    </div>
+    <!--row -->
+</div>
+<hr />
+<!-- container -->
 
 <!-- END OF MODAL TEST -->
