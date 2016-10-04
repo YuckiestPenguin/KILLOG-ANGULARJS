@@ -1,32 +1,36 @@
-.sample-show-hide {
-  transition: all linear 0.5s;
-}
-.sample-show-hide.ng-hide {
-  opacity: 0;
+#little-box {
+    background: #98bf21;
+    height: 100px;
+    width: 100px;
+    position: absolute;
 }
 
 #parallax-containers {
     /* The image used */
     background-image: url("../img/projectLogistics/containers.jpg");
     /* Set a specific height */
-    height: 500px;
+    height: 250px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #parallax-house {
     /* The image used */
     background-image: url("../img/mobilizations/home-twilight-full.jpeg");
     /* Set a specific height */
-    height: 500px;
+    height: 250px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #parallax-city-bokeh {
@@ -39,4 +43,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
