@@ -24,7 +24,7 @@ myApp.config(function($routeProvider) {
 myApp.controller('mainController', function($scope) {
     $scope.title = 'Kinetix International Logistics',
         $scope.motto = 'The Power of Moving Forward',
-        $scope.message = "Kinetix International is an experienced project logistics and global mobility company with core competencies in the areas of Domestic & International Household Goods Moving, Cargo & Logistics Sourcing and Corporate Relocation Management.",
+            $scope.message = "Kinetix International is an experienced project logistics and global mobility company with core competencies in the areas of Domestic & International Household Goods Moving, Cargo & Logistics Sourcing and Corporate Relocation Management.",
         $scope.services = {
             text: ['Project Logistics & Specialized Commodities', 'Household Goods & Mobilizations', 'Domestic & International Supply Chain Operations']
         };

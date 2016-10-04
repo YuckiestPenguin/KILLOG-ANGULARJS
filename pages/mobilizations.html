@@ -52,8 +52,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="container">
+        <!-- reset code as precation -->
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-xs-3 col-md-6" ng-repeat="feature in features1">
                     <h4><a ng-click="showDetails = ! showDetails">{{feature.name}}</a>
@@ -64,42 +64,104 @@
 
                 </div>
             </div>
-        </div>
-
-
-
+        </div> -->
+        <div class="container">
+            <div class="row text-center">
+                <div ng-init="showModal=false">
+                    <div class="col-xs-3 col-md-6" ng-repeat="feature in features1">
+                        <!-- main link -->
+                        <h4 class="text-center"><a ng-click="showModal =! showModal">{{feature.name}}</a></h4>
+                        <div class="modal fade in" aria-hidden="true" style="display: block;" ng-show="showModal">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content animate-zoom">
+                                    <div class="modal-header"><button type="button" class="close" ng-click="showModal=false">x</button>
+                                        <h4 class="modal-title">{{feature.name}}</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            {{feature.definition}}
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <!-- <button type="button" class="btn btn-default" ng-click="showModal=false">close</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- ng-init -->
+            </div> <!--row -->
+        </div> <!-- container -->
         <hr />
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h3>Domestic Services Portfolio</h3>
-            </div>
-            <div class="col-xs-3 col-md-6" ng-repeat="feature in features2">
-                <h4><a ng-click="showDetails = ! showDetails">{{feature.name}}</a>
-</h4>
-                <div class="text-center" ng-show="showDetails">
-                    <p>
-                        {{feature.definition}}
-                    </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <h3>Domestic Services Portfolio</h3>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row text-center">
+                <div ng-init="showModal=false">
+                    <div class="col-xs-3 col-md-6" ng-repeat="feature in features2">
+                        <!-- main link -->
+                        <h4 class="text-center"><a ng-click="showModal =! showModal">{{feature.name}}</a></h4>
+                        <div class="modal fade in" aria-hidden="true" style="display: block;" ng-show="showModal">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content animate-zoom">
+                                    <div class="modal-header"><button type="button" class="close" ng-click="showModal=false">x</button>
+                                        <h4 class="modal-title">{{feature.name}}</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            {{feature.definition}}
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <!-- <button type="button" class="btn btn-default" ng-click="showModal=false">close</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- ng-init -->
+            </div> <!--row -->
+        </div> <!-- container -->
         <hr />
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h3>International Services Portfolio</h3>
-            </div>
-            <div class="col-xs-3 col-md-6" ng-repeat="feature in features3">
-                <h4><a ng-click="showDetails = ! showDetails">{{feature.name}}</a>
-</h4>
-                <div class="text-center" ng-show="showDetails">
-                    <p>
-                        {{feature.definition}}
-                    </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <h3>International Services Portfolio</h3>
                 </div>
             </div>
         </div>
-
+        <div class="container">
+            <div class="row text-center">
+                <div ng-init="showModal=false">
+                    <div class="col-xs-3 col-md-6" ng-repeat="feature in features3">
+                        <!-- main link -->
+                        <h4 class="text-center"><a ng-click="showModal =! showModal">{{feature.name}}</a></h4>
+                        <div class="modal fade in" aria-hidden="true" style="display: block;" ng-show="showModal">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content animate-zoom">
+                                    <div class="modal-header"><button type="button" class="close" ng-click="showModal=false">x</button>
+                                        <h4 class="modal-title">{{feature.name}}</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            {{feature.definition}}
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <!-- <button type="button" class="btn btn-default" ng-click="showModal=false">close</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- ng-init -->
+            </div> <!--row -->
+        </div> <!-- container -->
         <hr />
-
     </div>
 </div>
