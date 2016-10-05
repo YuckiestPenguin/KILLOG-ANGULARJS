@@ -5,32 +5,88 @@
     position: absolute;
 }
 
-#parallax-containers {
+#parallax-moving-forward {
     /* The image used */
-    background-image: url("../img/projectLogistics/containers.jpg");
+    background-image: url("../img/general/moving-forward.jpg");
     /* Set a specific height */
-    height: 250px;
+    height: 500px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#parallax-containers {
+    /* The image used */
+    background-image: url("../img/projectLogistics/containers.jpg");
+    /* Set a specific height */
+    height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#parallax-vintage-car {
+    /* The image used */
+    background-image: url("../img/general/vintage-car.jpg");
+    /* Set a specific height */
+    height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#parallax-paper-boat {
+    /* The image used */
+    background-image: url("../img/projectLogistics/paper-boat.jpg");
+    /* Set a specific height */
+    height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#parallax-containers-small {
+    /* The image used */
+    background-image: url("../img/projectLogistics/containers.jpg");
+    /* Set a specific height */
+    height: 100px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 #parallax-house {
     /* The image used */
     background-image: url("../img/mobilizations/home-twilight-full.jpeg");
     /* Set a specific height */
-    height: 250px;
+    height: 400px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 #parallax-city-bokeh {
@@ -45,4 +101,42 @@
     background-size: cover;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+#parallax-rusty-containers {
+    /* The image used */
+    background-image: url("../img/general/rusty-containers.jpeg");
+    /* Set a specific height */
+    height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+#panel2, #flip2 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel2 {
+    padding: 50px;
+    display: none;
 }

@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -1082,8 +1082,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Quicksand", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -4957,8 +4957,8 @@ a.badge:focus {
 }
 .jumbotron {
   padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 5%;
+  padding-bottom: 100px;
+  margin-bottom: 0%;
   color: inherit;
   background-color: #eee;
 }
@@ -5868,10 +5868,10 @@ button.close {
 }
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 25%;
+  right: 25;
+  bottom: 25%;
+  left: 25%;
   z-index: 1050;
   display: none;
   overflow: hidden;

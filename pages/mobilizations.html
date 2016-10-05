@@ -1,5 +1,5 @@
-<div class="jumbotron text-center">
-    <p>Mobilizations</p>
+<div class="page-header text-center">
+    <h1>Household Goods & Mobilizations</h1>
 
     <p></p>
 </div>
@@ -11,11 +11,11 @@
         </div>
     </div>
 </div>
-<hr />
+
 <div class="container" ng-controller="mobilizationsController">
     <div class="row">
         <div class="col-xs-4 col-md-3 text-center" ng-repeat="service in services.text">
-            <p>{{service}}</p>
+            <!-- <p>{{service}}</p> -->
         </div>
     </div>
 </div>
@@ -25,7 +25,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-12 text-center">
-            <p>Household Goods & Mobilizations</p>
+            <!-- <p>Household Goods & Mobilizations</p> -->
             <p ng-repeat="introduction in introductions.text"> <br /> {{introduction}}
 
             </p>
@@ -33,19 +33,19 @@
     </div>
     <hr />
 </div>
-<div class="container-fluid">
+<div class="container">
     <div class="row text-center">
-        <div class="col-xs-6 col-md-12">
-            <p>{{serviceIntroduction}}</p>
+        <div class="col-xs-12 col-md-12">
+            <h2>Our Services:</h2>
             <br />
-            <p>Our Services:</p>
-            <hr />
+            <p>{{serviceIntroduction}}</p>
+<br />
         </div>
 
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
-                    <p>Consultation & Financial Services</p>
+                    <h3>Consultation & Financial Services</h3>
                 </div>
             </div>
         </div>
@@ -64,15 +64,16 @@
 </div> -->
         <div class="container">
             <div class="row text-center">
+              <hr />
                 <div ng-init="showModal=false">
                     <div class="col-xs-6 col-md-6" ng-repeat="feature in features1">
                         <!-- main link -->
                         <p class="text-center"><a ng-click="showModal =! showModal">{{feature.name}}</a></p>
-                        <div class="modal fade in" aria-hidden="true" style="display: block;" ng-show="showModal">
+                        <div class="modal" aria-hidden="true" style="display: block;" ng-show="showModal">
                             <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content animate-zoom">
+                                <div class="modal-content animate-zoom ">
                                     <div class="modal-header"><button type="button" class="close" ng-click="showModal=false">x</button>
-                                        <p class="modal-title">{{feature.name}}</p>
+                                        <h4 class="modal-title"><strong>{{feature.name}}</strong></h4>
                                     </div>
                                     <div class="modal-body">
                                         <p>
@@ -89,16 +90,17 @@
             <!--row -->
         </div>
         <!-- container -->
-        <hr />
+        <!-- <hr /> -->
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
-                    <p>Domestic Services Portfolio</p>
+                    <h3>Domestic Services Portfolio</h3>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row text-center">
+              <hr />
                 <div ng-init="showModal=false">
                     <div class="col-xs-6 col-md-4" ng-repeat="feature in features2">
                         <!-- main link -->
@@ -107,7 +109,7 @@
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content animate-zoom">
                                     <div class="modal-header"><button type="button" class="close" ng-click="showModal=false">x</button>
-                                        <p class="modal-title">{{feature.name}}</p>
+                                        <h4 class="modal-title"><strong>{{feature.name}}</strong></h4>
                                     </div>
                                     <div class="modal-body">
                                         <p>
@@ -124,11 +126,12 @@
             <!--row -->
         </div>
         <!-- container -->
-        <hr />
+        <!-- <hr /> -->
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
-                    <p>International Services Portfolio</p>
+                    <h3>International Services Portfolio</h3>
+                    <hr />
                 </div>
             </div>
         </div>
@@ -142,7 +145,7 @@
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content animate-zoom">
                                     <div class="modal-header"><button type="button" class="close" ng-click="showModal=false">x</button>
-                                        <p class="modal-title">{{feature.name}}</p>
+                                        <h4 class="modal-title"><strong>{{feature.name}}</strong></h4>
                                     </div>
                                     <div class="modal-body">
                                         <p>
@@ -159,6 +162,10 @@
             <!--row -->
         </div>
         <!-- container -->
-        <hr />
+
     </div>
 </div>
+
+        <div id="parallax-vintage-car">
+
+        </div>

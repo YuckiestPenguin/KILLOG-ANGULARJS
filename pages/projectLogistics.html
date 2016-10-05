@@ -1,8 +1,7 @@
-<div class="jumbotron text-center">
-    <p>Project Logistics</p>
+<div class="page-header text-center">
+    <h1>Cargo & Logistics</h1>
     <p></p>
 </div>
-
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">
@@ -10,33 +9,29 @@
         </div>
     </div>
 </div>
-<hr />
-<div class="container">
-    <div class="row">
-        <div class="col-xs-4 col-md-2 text-center" ng-repeat="service in services.text">
-            <p>{{service}}</p>
-        </div>
-    </div>
-</div>
+
 <div id="parallax-containers">
 </div>
+
+
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-12 text-center">
-            <p>Cargo & Logistics</p>
+            <!-- <p>Cargo & Logistics</p> -->
             <p ng-repeat="introduction in introductions.text"> <br /> {{introduction}}
             </p>
         </div>
     </div>
 </div>
-<hr />
+
 <div class="container">
+  <hr />
     <div class="row text-center">
         <div class="col-xs-12 col-md-12">
-            <p>{{serviceIntroduction}}</p>
+            <h2>Our Services:</h2>
             <br />
-            <p>Our Services:</p>
-            <hr />
+            <p>{{serviceIntroduction}}</p>
+<br />
         </div>
     </div>
 </div>
@@ -53,6 +48,7 @@
 
 <!-- MODAL TEST -->
 
+
 <div class="container">
     <div class="row text-center">
         <div ng-init="showModal=false">
@@ -64,7 +60,7 @@
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header"><button type="button" class="close" ng-click="showModal=false">x</button>
-                                <p class="modal-title">{{feature.name}}</p>
+                                <h4 class="modal-title"><strong>{{feature.name}}</strong></h4>
                             </div>
                             <div class="modal-body">
                                 <p>
@@ -82,7 +78,9 @@
     </div>
     <!--row -->
 </div>
-<hr />
+
+<div id="parallax-paper-boat">
+</div>
 <!-- container -->
 
 <!-- END OF MODAL TEST -->

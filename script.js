@@ -14,26 +14,38 @@ myApp.config(function($routeProvider) {
             templateUrl: 'pages/mobilizations.html',
             controller: 'mobilizationsController'
         })
-        .when('/supplyChain', {
-            templateUrl: 'pages/supplyChain.html',
-            controller: 'supplyChainController'
+        .when('/about', {
+            templateUrl: 'pages/about.html',
+            controller: 'aboutController'
         });
 
 });
 
+
+// main controller array
+
+var homePageFeatures = [{
+  name: 'Project Logistics & Specialized Commodities',
+  description: 'Kinetix International Logistics Project Cargo and Logistics division specializes in the design and implementation of freight forwarding, warehousing and supply chain management solutions for US government agencies and their contractors operating in developing countries.'
+}, {
+  name: 'Household Goods & Mobilizations',
+  description: 'Kinetix International Logistics’ Household Goods Management Division specializes in the design and delivery of innovative transportation programs for Fortune 500 and emerging growth corporations, NGO’s and governmental agencies and third party relocation management companies worldwide.'
+}];
+// Main Controller
 myApp.controller('mainController', function($scope) {
     $scope.title = 'Kinetix International Logistics',
         $scope.motto = 'The Power of Moving Forward',
-        $scope.message = "Kinetix International is an experienced project logistics and global mobility company with core competencies in the areas of Domestic & International Household Goods Moving, Cargo & Logistics Sourcing and Corporate Relocation Management.",
+        $scope.message = "Kinetix International is an experienced project logistics company with core competencies in the areas of project logistics, domestic & international household goods transport, and cargo & logistics sourcing.",
         $scope.services = {
-            text: ['Project Logistics & Specialized Commodities', 'Household Goods & Mobilizations', 'Domestic & International Supply Chain Operations']
-        };
+            text: ['Cargo & Logistics', 'Household Goods & Mobilizations']
+        },
+        $scope.features = homePageFeatures;
 
 
 
 });
 
-// START OF PROJECT LOGISTICS
+// Project Logistics Controller
 // This array contains all of the features in services provided.
 var projectLogisticsFeatures = [{
     name: 'Route Studies and Consultation',
@@ -167,7 +179,7 @@ myApp.controller('mobilizationsController', function($scope) {
         },
         $scope.introductions = {
             text: [
-                'Kinetix International Logistics’ Project Cargo and Logistics division specializes in the design and implementation of freight forwarding, warehousing and supply chain management solutions for US government agencies and their contractors operating in developing countries. Kinetix has an exceptional ability to manage complex logistics projects that incorporate global, single source accountability for expediting, warehousing, materials management, export compliance, freight management, customs clearance and last mile deliveries to primarily developing countries and austere environments.', 'Kinetix International Logistics has handled numerous FAR and ITAR-compliant freight forwarding and logistics contracts encompassing the supply chain management of multiple commodities and multiple vendors to locations as diverse as Afghanistan, Iraq, South Sudan, Haiti, Pakistan and many others. Our considerable travel and first-hand experience in developing countries gives us the ability to respond to volatile changes in political climates, host government regulations and seasonal conditions that impact logistical efficiency.', 'Our success with providing logistics solutions on both large and small scale projects is credited to our unique, integrated project management structure. Kinetix International Logistics combines financial strength, institutional knowledge, advanced IT support, proactive communication and a company culture of “thinking outside the box” to provide our clients with a level of service that is assumed to be unattainable by our competition and translates into significant cost and time savings for our clients.'
+                'Kinetix International Logistics’ Household Goods Management Division specializes in the design and delivery of innovative transportation programs for Fortune 500 and emerging growth corporations, NGO’s and governmental agencies and third party relocation management companies worldwide. As a recognized preferred provider to our valued client base, Kinetix focuses on transferee satisfaction, sensitivity to time requirements, policy and budget adherence and complete accountability. Managing thousands of household moves annually, Kinetix oversees an independent network of provider partners with proven track records in every state and over 160 countries worldwide.', 'Kinetix is recognized as a leader in household goods moving in developing countries. Our institutional knowledge of the Federal Acquisition Regulations (FAR), global transportation infrastructure and country specific customs procedures define our unique position in this growing market.', 'Kinetix is committed to building a custom moving & storage program to meet our clients’ business and financial strategies. We understand that a successful household goods move is more than just delivering an employee’s possessions to their final destination. It includes earning the trust of our valued clients, creating a comfort level for the transferee during the move process and understanding the importance of being accountable in every facet of the service delivery process.'
             ]
         },
         $scope.serviceIntroduction = 'Kinetix International Logistics provides household goods management programs that deliver services which are specific to a family’s individual needs. Our flexible domestic and international programs are driven by guidelines set forth by each client and supported by a team of the most seasoned industry specialists. We have partnered with a worldwide network of independent, pre-qualified agents to deliver exceptional service at reasonable cost. Providing single source accountability helps our clients evaluate their return on investment in Kinetix by utilizing the most current technology to provide customized management reporting.',
@@ -178,9 +190,9 @@ myApp.controller('mobilizationsController', function($scope) {
 
 // END OF MOBILIZATIONS
 
-myApp.controller('supplyChainController', function($scope) {
+myApp.controller('aboutController', function($scope) {
     $scope.message = 'Let our logistics team be your supply chain one-stop-shop; pre-planning, scheduling, managing carriers, equipment, warehousing, delivery notification, inventory tracking, 3rd party coordination, set-up, installation, tear-down, disposal, distribution, and single billing source – for all your cargo moving locally, long distance or internationally.',
-        $scope.services = {
-            text: ['Nationwide Inventory Management', 'International Commodities', 'LTL and FTL Shipments', 'Trade Show']
+        $scope.introductions = {
+            text: ['Kinetix was founded by an industry leader with a team established in 1986 that has worked together for up to 20 years. Our vendor and client relationships cover every country in the world and have existed for up to 30 years. Clients include corporations, U.S. and foreign governments, and global non-governmental organizations.', 'These relationships reflect the trust our clients have in Kinetix and our integrity, consistency, and expertise. Our incredibly high employee retention proves that our core values guide our operations every day. Our employees grow with our clients, and develop a keen understanding of their strategy and objectives. We expect no less from our partners around the world, and have positioned Kinetix to leverage our volume and coverage to our client’s benefit, every time.', 'Our team has an average tenure in their specialty of over 20 years, operating in service, government and corporate environments. We provide expert support for the strategic growth and development of our clients through the provision of services in over 160 countries worldwide.', 'Our clients choose Kinetix for our global reach, our flexible programs, our competitive pricing and our expert delivery. They demand agile implementation that integrates directly into their objectives and has the flexibility to change with the markets and environments they operate in. All of our client partnerships are founded on the application of key metrics with commitments in the areas of service delivery, cost transparency and complete accountability.','Whether supporting complex project logistics, U.S. domestic or expatriate programs, or freight forwarding, Kinetix is the choice for cost effectiveness and seamless service delivery.']
         };
 });
